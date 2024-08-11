@@ -2,10 +2,12 @@ import React from 'react';
 import { ScrollView, TextInput, View, Text} from 'react-native';
 import { styles } from './OvniFormStyles';
 import { OvniPequeno } from '../OvniPequeno/OvniPequeno';
+import { OvniTextInput } from '../OvniTextInput/OvniText';
 
 export function OvniForm() {
+  let texto = 'Solicitar';
   return (
-    <ScrollView style={styles.scrollview}>
+    <ScrollView>
       <View style={styles.viewOvne}>
         <OvniPequeno/>
       </View>
@@ -15,7 +17,7 @@ export function OvniForm() {
         <TextInput style={styles.textInput} placeholder='74 9.9999-9999?'></TextInput>
         <Text style={styles.text}>Onde você está? e porque quer ser abduzido?</Text>
         <TextInput style={styles.textInputLong} placeholder='Discorra...'></TextInput>
-        <Text style={styles.text}>Onde você está? e porque quer ser abduzido?</Text>
+        <OvniTextInput texto={texto}/>
       </View>
     </ScrollView>
   );

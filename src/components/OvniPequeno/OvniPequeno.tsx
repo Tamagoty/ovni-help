@@ -5,6 +5,6 @@ import ovni from '../../../assets/ovni.png'
 
 export function OvniPequeno() {
   return (
-      <Image source={ovni} style={{resizeMode: 'contain', height: 80, alignSelf: 'flex-end'}}/>
+      <Image source={ovni} style={{resizeMode: 'contain', width: 80, height: 80}}/>
   );
 }
